@@ -1,0 +1,115 @@
+Class Notes 06/10
+
+1). Stand up
+
+2). Git Local Commands Presentation (Kat)
+- local repository are just on your machine. 
+Here are some commands (git - definition - command pallet):
+* git int - Initialize a local repository - Git int
+* git branch - Create a new branch/version or copy - Git branch/
+* git add - Add a file/change to the staging area - Git add/stage
+* git commit - Commit changes (from stages) "commit 
+message i.e. what the change is" - 
+* git merge - Merge a branch int oa target branch - Git merge
+* git checkout - Switch to a branch - Git checkout
+
+3). Github Presentation (Luke)
+    - Github is a online site to be able to access a remote repository
+    - NEVER Push to master. You have to push to develop first then push
+    to master
+    - Only demo from master
+    - Reviewers are required to ensure that the pull request (merge) is 
+    good.
+    - Push: Sending local code to the remote repository
+    - Pull: Taking code from the remote repository to the local machine
+    - Merge: Being able to push code from one file to another (like merging
+    code from develop to the master)
+                         A---B---C---D---M  master
+                               \         /
+                                 E---F---G    develop
+    - Fetch: Searching and pulling any updates from the remote repository 
+    if any changes were committed by other developers.
+    - Git workflow:
+                    Local -> Feature -> Develop -> Master
+
+    Master - Working product
+    Develop - Next release of product (team feature)
+    Feature - Devs from local
+    Local - Individual machine with devs code
+
+*BREAK*
+
+4). Graphs - The Most Used Data Type (Peter)
+- Linked Lists are a type of graphs (specialized graph)
+- Graphs are vertices: Hold the Data
+- Edges: Can have weights 
+- GRAPHS ARE LIKE TREES - Very versatile
+- How can we use graphs?
+    * Networks
+    * Advanced Math
+    * Machine Learning 
+    * Game Development 
+
+- Weighted vs. Unweighted 
+
+Weighted:
+Edges have numeric values (distance, importance, etc)
+
+Unweighted:
+Edges are all effectively equivalent to their traversal
+
+- Directed vs Undirected
+
+Directed (Digraph):
+You can only move along an edge in one direction (via arrows)
+
+Undirected:
+You can move along an edge in both directions
+
+Typical Graph Function
+Add/Remove vertex
+Add/REmove EdgesWeighted?
+Directed?
+Find Vertex?
+Find Edge?
+
+Is it connected?
+- given any vertex, can you get to any other vertex through legal 
+edge movements
+Is it Fully Connected?
+- Can every vertex reach ever other vertex through a single edge traversal
+Path Exists?
+- Does at least one path exist between two given vertices?
+- "Can I actually beat this game or is it mathematically impossible?"
+Dijkstra's Algorithm
+- If a path between two vertices exists, find the shorted path from 
+one vertex to the other
+
+How to Represent Graphs?
+Adjacent List
+- List of Linked List-Each vertex is the head of a linked list 
+    * The linked list holds their edges (and eights, if they exist)
+Adjacency Matrix
+- Matrix of vertices
+    * Row and column titles are the vertices
+    * Row-column indices are edge weights (or edge existence)
+
+- List vs Matrix
+
+List:
+More common
+Usually easier to visualize/conceptualize
+adding edges is slow
+Many algorithms are slow or very individualized
+
+Matrix:
+More algorithms are extremely fast in comparison
+Searches and traversals very mathematical
+adding vertices is slow
+
+Library
+- NetworkX (http://networkx.github.io/)
+    * Graphs, digraphs, multi-graphs
+    * Well tested (>90% coverage)
+    * Very 00 complaint 
+
