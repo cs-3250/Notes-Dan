@@ -1,0 +1,126 @@
+Class Notes 06/12
+
+1). Stand Up
+
+    1). Since Last Time
+        - Finished 5 dysfunctions of a team
+        - Researched graphs 
+        - Practiced on Python some more
+        - NetworkX Tutorial 
+        - Make Spike Trello cards
+        - Uploaded Notes to my Notes repo
+    2). What am I going to do?
+        - Read more on graphs
+        - Brainstorm with my team (commands)
+    3). What blockers do you have?
+        - Implementation 
+
+2). Beaty's Stand-up / Questions 
+- Everything in Python is considered a "Dictionary" 
+- Dictionary: A key value 
+- Work on adventure based ideas, verbs, and objects.
+- Have a dictionary of a dictionary
+    * Outer Dictionary - verbs 
+    * Inner Dictionary - objects 
+- Python have methods that are first class values 
+
+- Key: {"Go", foo} having a key and referencing a method 
+    * Go is the Key
+    * foo is the method reference
+
+- "Find out what the strengths are in a programming language and use it
+to its advantage. Don't make things difficult for yourself with a
+different programming language if you don't have to.
+
+3). Continuation of Software Engineering Presentation
+
+Non-Functional Requirements Examples 
+    - Performance
+    - Real-time Performance
+    - Maintainability
+        * Readability
+Analysis
+    Static - Analyzing the (non-running) code 
+        * liters, cyclomatic complex, method length, etc.
+        * Pylint, Sonarcloud, radon, Checkstyle
+    Dynamic - Analyzing a running programming
+        * Spotbugs, Valgrind, and Purify 
+!!Testing!! 
+    - Acceptance: the customer saying that it meets our requirements 
+    - Unit - Method(TDD): Write a test per method (TEST YOUR CODE BEFORE YOU CODE)
+        * Write a test before you write any code and make sure that it fails the first
+          time and continually test it and commit it(Early and often)
+    - Integration - Class: ******
+    - System: Check the entire system to make sure that everything is running correctly.
+    
+    * Blackbox testing: Non-bias code review without even seeing the code
+    * 'The Psychology of Programming' a book that talks about how different programmers Work
+Unit Testing 
+    - Arguably the most important test
+    - Many modern SE methods use "Test First"
+        1). Write a test
+        2). Make sure it fails
+        3). Write just enough code to make it work
+    - If you don't know how to test it, how can you write it?
+    - Correct frame of mind
+    - Test-driven Development 
+
+    * "Don't write code that you think you will need tomorrow."
+Implementation
+    - Software Engineering tends to focus on the requirements, deign, and processes
+    - A bad implementation will ruin everything else
+
+    * "What do we mean when we have 'user stories'?" 
+Guideline: Style
+    - Follow language styles
+        * E.g.: 'The Elements of Java Style' by Scott Ambler and Trevor Misfeldt
+        * 'Good to Great' book
+
+    * Management is looking at individuals and what unique passions they have
+    * Leaders look at people all the same and get them to a specific goal
+Guideline: Naming
+    - Use good, descriptive names
+    - Probably not Hungarian Notation (lol)
+        * crszkvc30LastNameCol: a constant reference argument, holding the 
+        contents of a database column...Blah,Blah,Blah(we don't do this anymore).
+        * Type checking now done by IDE and the compiler
+Guideline: Test
+    - Every method has unit tests; make them easy to run
+    - Tests must be easy to run and run a lot
+        * E.g.: Junit
+    - TDD
+Guideline: Use Libraries 
+    - Developed and tested by many others
+    - Don't re-implement
+        * You need to learn what is possible
+        * Yes, you may know how and think you're better, but you're not
+        * Write something that no one else has written
+Guideline: Reviews
+    - Code reviews are very effective for improving quality
+    - Knowing that someone else will be looking affects you
+    - Others know things you don't 
+Guidelines
+    - We'll be covering other guidelines such as DRY, YAGNI, SOLID,
+      Liskov substitution principle, etc.
+    
+    * D.R.Y.: Don't repeat your code (that's why we have methods)
+Agile
+    - Many different process that emphasize short release cycles and that allow changes in design 
+    - Focus on human and team aspects
+
+    * Question: What is architecture? A multi-tired and multi-level design of the shared 
+      vision that the product encompasses
+    * Waterfall - a older cycle design for developers - that uses "successful" projects as 
+      frameworks for new projects. However, computing doesn't have any successful projects,
+      as well as the fact that projects change all the time. In return we use Agile instead.
+    
+    - Short releases and iterations
+    - Incremental design
+    - User involvement
+    - Lightweight documentation
+    - Informal communication
+    - Change 
+
+    * We will continually be testing, implementing, and working in order to help the costumer
+    * Show the customer the least amount of functionality at the beginning then continually
+      work with the customer until the final product. They will be the happiest at the end
