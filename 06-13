@@ -34,4 +34,6 @@ State = (Current Room, Items) -> Pick-Up Sword -> (Current Room, New Item List)
                               |
                               --> Unlock Door -> (New Room, Items)
 
-3). VSCode Top Dow Development (TDD) Examples:
+3). VSCode Top Down Development (TDD) Testing Example:
+
+Look at AddString.py file for example
