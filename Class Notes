@@ -71,13 +71,15 @@ Class Questions/Discussion
 -	Demo Day is on Thursday, which the Product Owner will be going through the PowerPoint with the Team.
 -	Don’t forget to add the Burndown, Velocity, Story Points, and Code Coverage in the Presentation 
 -	“The Customer is NOT Always right” we always need to check in and tell them that it will take longer to develop.
--	Being in a larger team we need to COMMUNICATE WITH THE CUSTOMER (Lauran) so the Product Owner will be the line of communication between the team and her. 
+-	Being in a larger team we need to COMMUNICATE WITH THE CUSTOMER (Lauran) so the Product Owner will be the line 
+    of communication between the team and her. 
 -	We will negotiate with our customer to what will be in our Product Backlog and what they expect us to complete. 
 -	“Refractor the code” going back and making it more efficient. 
 
 Intro to Software Engineering Presentation 
 
--	Most software is just BAD. It cost all of us a ton of money and most of the time that’s a bad thing, but it’s also a good thing. 
+-	Most software is just BAD. It cost all of us a ton of money and most of the time that’s a bad thing, but it’s 
+    also a good thing. 
 -	Software making us a good amount of money, better than digging ditches, and it can be a lot of fun.
 -	Famous article “The Cathedral and the Bazar” (Linux)
 -	Microsoft bought Github
@@ -97,9 +99,11 @@ Intro to Software Engineering Presentation
 -	Word was originally started on the Macintosh
 
 -	Mariner, a satellites that was shot into space, flew way because of a conversion error
--	Therac 25, a radiation machine for cancer patients, which ended up overdosing radiation for 6 patients and 3 died. It all was an error in the software.
+-	Therac 25, a radiation machine for cancer patients, which ended up overdosing radiation for 6 
+    patients and 3 died. It all was an error in the software.
 -	Ariane 5, a spacecraft that blew up, which was cause to overflow of the system
--	Mars Climate Orbiter, another spacecraft, drew straight into Mars because of an Imperial and Metric conversion problem. 
+-	Mars Climate Orbiter, another spacecraft, drew straight into Mars because of an Imperial and 
+    Metric conversion problem. 
 -	Stuxnet did cool shit.
 *************************************************************************************
 Class Notes 05/06
@@ -129,7 +133,6 @@ Improvements
 9.	Then the Actual Time it took to complete it
 
 •	Scrum master goes last of the overview of the team for daily stand ups 
-
 
 Continuation of Software Engineering Presentation
 
@@ -410,7 +413,6 @@ Class Notes 06/13
 
 1). Stand ups 
 
-
 2). Class discussion 
 
 Architecture Workflow:
@@ -552,3 +554,21 @@ Look at AddString.py file for example
         * Detailed plans for next two weeks, rough plans for three months, 
           and crude after that
 *************************************************************************************
+Class Notes 06/19
+
+1). Stand up
+    - Since last time?
+        * Wrote up new title Screen
+        * Read a little of Design Patterns
+        * Presentation
+        * Graphing
+        * Trello
+    - What I Will do next time?
+        * Pair program with my team 
+        * Help out where I can for Demo day
+    - Blockers
+        * NONE
+
+2). Questions 
+    - 200k Peter will go over a presentation on merge conflicts 06/20 @ 12pm
+    - 
