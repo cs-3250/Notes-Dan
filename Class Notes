@@ -70,16 +70,18 @@ Class Questions/Discussion
 -	Previous Sprint Backlog will be added to the next Sprint Backlog. 
 -	Demo Day is on Thursday, which the Product Owner will be going through the PowerPoint with the Team.
 -	Don’t forget to add the Burndown, Velocity, Story Points, and Code Coverage in the Presentation 
--	“The Customer is NOT Always right” we always need to check in and tell them that it will take longer to develop.
--	Being in a larger team we need to COMMUNICATE WITH THE CUSTOMER (Lauran) so the Product Owner will be the line 
-    of communication between the team and her. 
--	We will negotiate with our customer to what will be in our Product Backlog and what they expect us to complete. 
+-	“The Customer is NOT Always right” we always need to check in and tell them that it will take longer 
+    to develop.
+-	Being in a larger team we need to COMMUNICATE WITH THE CUSTOMER (Lauran) so the Product Owner will 
+    be the line of communication between the team and her. 
+-	We will negotiate with our customer to what will be in our Product Backlog and what they expect us 
+    to complete. 
 -	“Refractor the code” going back and making it more efficient. 
 
 Intro to Software Engineering Presentation 
 
--	Most software is just BAD. It cost all of us a ton of money and most of the time that’s a bad thing, but it’s 
-    also a good thing. 
+-	Most software is just BAD. It cost all of us a ton of money and most of the time that’s a bad thing, 
+    but it’s also a good thing. 
 -	Software making us a good amount of money, better than digging ditches, and it can be a lot of fun.
 -	Famous article “The Cathedral and the Bazar” (Linux)
 -	Microsoft bought Github
@@ -138,14 +140,17 @@ Continuation of Software Engineering Presentation
 
 DIA
 -	88 airport gates in 3 concourses, 17 mile of track and 5 mile of conveyor belts, etc.
--	The automated never worked: 16 months past its hard deadline, cost the city $560 million over budget, last airline costed them 1 million to keep it going
+-	The automated never worked: 16 months past its hard deadline, cost the city $560 million 
+    over budget, last airline costed them 1 million to keep it going
 Chaos 1995
 -	$250 billion each year on IT application development of approximately 175,000 Projects 
 -	31.1% of projects would be cancelled before they got completed. 
 -	Governments spent $81 billion for the cancelled projects
 -	Only 16.2% for software projects that are completed on-time and on-budget
 No Silver Bullet
--	“There is no single development, in either technology or management technique, which by itself promises even one order of magnitude improvement within a decade in productivity, in reality, in simplicity.” – Fred Brooks
+-	“There is no single development, in either technology or management technique, which by 
+    itself promises even one order of magnitude improvement within a decade in productivity, 
+    in reality, in simplicity.” – Fred Brooks
 -	Accidental complexity VS. essential complexity
 -	There is a difference between an ordinary designer and a great one
 Software Engineering 
@@ -571,4 +576,111 @@ Class Notes 06/19
 
 2). Questions 
     - 200k Peter will go over a presentation on merge conflicts 06/20 @ 12pm
-    - 
+
+3). What is Design Patterns? - Chapter 1 | Design Patterns 
+
+    Wikipedia
+        * A software design pattern is a general reusable solution to a 
+         commonly-occurring problems
+        * Design patterns are formalized best practices that the programmer can use to solve
+          common problems when designing an application or system.
+    
+    Why Talk About Design Patters?
+        * Creates a shared vocabulary
+            - Developers can interact in richer terms (shared vocabulary)
+        * Keeps thinking/designing at the abstract (pattern) level
+            - Creates a better (more flexible, reusable, etc.) designs
+    
+    Origin
+        * Patterns originated as a architectural concept by Christopher Alexander (1977/79)
+        * Kent Back and Ward Cunningham developed the ida of applying patterns to programing 
+            - specifically pattern languages - and presented their results at the OOPSLA conference 
+              each year. 
+    
+    Christopher Alexander
+        * In software, alexander is regarded as the father of the pattern language movement
+        * The first wiki - the technology behind Wikipedia - led directly from Alex's work.
+        * Books: A Pattern Language: Towns, Buildings, Construction (1977) and The Timeless
+          Way of Building (1979)
+        * Alexander's Notes on the Synthesis of Form was said to be required reading for 
+          researchers in computer science
+
+    Wide Influence
+        * will Wright wrote that Alexander's work was influential to the origin of SimCity
+
+    Groups and Concepts
+        * Design patterns were originally grouped into the categories 
+            - Creational Patterns 
+            - Structural Patters 
+            - Behavioral Patters
+        * Describe using the concepts of 
+            - Delegation: Telling something to know what to do
+            - Aggregation: Putting things together 
+            - Consultation: One object is consulting with another 
+
+        A - Abstraction
+        E - Encapsulation
+        I - Inheritance 
+        0+P - Polymorphism
+
+        ! Fractal: an object which has non-integral dimensions !
+
+    Fist Design Principle
+        * Identify the aspects of your application that vary and separate them from what 
+          stays the same
+        * You can alter or extend without affecting other parts
+        * Basis of almost every design pattern
+        * Also creates a more easily reusable objects 
+
+    Second Design Principle 
+        * Program to an interface, not an implementation
+            - Not necessarily a Java interface
+            - Program to a supertype 
+                * private Map<String, Boolean> urls = new ConcurrentHashMap<String, Boolean>();
+            - Can then better use Polymorphism
+            - Can more easily chance implementation
+
+        "Always declare variables at the highest implementation" - Beaty
+    
+    Third Design Principle 
+        * Favor composition over Inheritance
+        * Favor has-a relationships over is-a relationships (Cat <- Mammal <- Animal)
+        * Inheritance limits reusability 
+    
+    Strategy Pattern
+        * Defines a family of algorithms, encapsulates each one, and makes them interchangeable 
+        * Strategy lets the algorithm vary independently from the clients that use it
+
+4). The Observer Pattern - Chapter 2 | Design Patterns
+    
+        The Observer Pattern    
+            * Observers are notified when changes are implemented.
+        
+        More on Observer
+            * The observer pattern is a software design pattern in which an object, called the 
+              subject, maintains a list of its dependents, called observers, and notifies them 
+              automatically of any states changes, usually by calling one of their methods 
+            * It is mainly used to implement distributed event handling systems, in "event driven" 
+              software 
+            * The observer pattern is also a key part in the familiar model-vide-controller (MVC)
+              Pattern 
+
+        Design Principle    
+            * Strive for loosely-coupled designs between objects that interact 
+            * Objects have very little information about each other 
+            * No shared state
+
+        Decoupling
+            * The observer pattern helps decouple objects
+            * The subject knows only that the observer implements the Observer interface
+            * New observers can be added at any time
+            * New types of observers can be added 
+            * Can reuse subjects and observers independently 
+            * Changes have no effect on each other 
+        
+        Warnings
+            * don't depend on order of evaluation of notifications
+            * Java Observable is a class
+                - Not an inheritance
+                - Must inherit
+                - setChanged() is protected
