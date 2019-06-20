@@ -72,7 +72,7 @@ Class Questions/Discussion
 -	Don’t forget to add the Burndown, Velocity, Story Points, and Code Coverage in the Presentation 
 -	“The Customer is NOT Always right” we always need to check in and tell them that it will take longer 
     to develop.
--	Being in a larger team we need to COMMUNICATE WITH THE CUSTOMER (Lauran) so the Product Owner will 
+-	Being in a larger team we need to COMMUNICATE WITH THE CUSTOMER (Lauren) so the Product Owner will 
     be the line of communication between the team and her. 
 -	We will negotiate with our customer to what will be in our Product Backlog and what they expect us 
     to complete. 
@@ -684,3 +684,47 @@ Class Notes 06/19
                 - Not an inheritance
                 - Must inherit
                 - setChanged() is protected
+*************************************************************************************
+Class Time 06/20
+
+1). Demo Day:
+
+    Team 1:
+        - Funny Presentation 
+        - Definition of "Done" for each User Sprint
+        - Pictures of Codecov, Travis-CI, etc.
+
+    Team 3:
+        - Having a working demo
+        - They told their LA that they couldn't finish the User stories
+          * Was an excellent teaching lesson because the customer will 
+            always expect a lot and the team needs to communicate to 
+            them the realistic timeline
+
+    Team 4:
+        - Writing up a story to the game 
+        - Project vs project plan:
+        ________________________________________________________
+        | Sprint 1 | Sprint 2 | Sprint 3 | Sprint 4 | Sprint 5 |
+        |          |          |          |          |          |
+        |          |          |          |          |          |
+        ________________________________________________________  
+        - Steady workflow, they kept the presentation and demo very 
+          simple. We should be doing the same. 
+    Team 5:
+        - Having a single day that works to meet with everyone
+
+2). Beaty Talks 
+
+    *** Test on 06/27/2019 *****
+    *       Scrum Guide        *
+    * 5 Dysfunctions of a Team *
+    *        Patterns          *
+    ****************************
+
+    - Evaluations from each person on the team will be apart of your grade
+    - Be careful when signing a Employee Agreement for a company
+        * READ WHAT YOU SIGN DUMBASS
+    - "Make sure that whatever company you work they want to help you 
+      grow and you want to help the company grow" - Beaty
+
