@@ -17,6 +17,7 @@ My Team:
 5. Greg Dews
 6. Matt Hurt 
 7. Daniel L'Episcopo
+
 *************************************************************************************
 Class Notes 05/30
 
@@ -33,6 +34,7 @@ TDD (Test Down Development)
 - Do chunks of code work properly?
 
 Codecov - Product Backlog, Sprint Backlog, Doing, and Done. 
+
 *************************************************************************************
 Class Notes 06/03
 
@@ -62,6 +64,7 @@ more should be the one spectating
 
 * Simple, clean, and short code is best - The method deconstruction should
 only have 7 variables per method. That's it. 
+
 *************************************************************************************
 Class Notes 06/05
 
@@ -107,6 +110,7 @@ Intro to Software Engineering Presentation
 -	Mars Climate Orbiter, another spacecraft, drew straight into Mars because of an Imperial and 
     Metric conversion problem. 
 -	Stuxnet did cool shit.
+
 *************************************************************************************
 Class Notes 05/06
 
@@ -171,6 +175,7 @@ Terminology
 Design Constraints
 -	Statements the constrain the ways in which the software can be designed and implemented 
 -	Platform, language, BD, wed app, GUI, etc.
+
 *************************************************************************************
 Class Notes 06/10
 
@@ -286,6 +291,7 @@ Library
     * Graphs, digraphs, multi-graphs
     * Well tested (>90% coverage)
     * Very 00 complaint 
+
 *************************************************************************************
 Class Notes 06/12
 
@@ -413,6 +419,7 @@ Agile
     * We will continually be testing, implementing, and working in order to help the costumer
     * Show the customer the least amount of functionality at the beginning then continually
       work with the customer until the final product. They will be the happiest at the end
+
 *************************************************************************************
 Class Notes 06/13
 
@@ -452,6 +459,7 @@ State = (Current Room, Items) -> Pick-Up Sword -> (Current Room, New Item List)
 3). VSCode Top Down Development (TDD) Testing Example:
 
 Look at AddString.py file for example
+
 *************************************************************************************
 06/17 Class Notes
 
@@ -558,6 +566,7 @@ Look at AddString.py file for example
         * Customers gain knowledge about solution
         * Detailed plans for next two weeks, rough plans for three months, 
           and crude after that
+
 *************************************************************************************
 Class Notes 06/19
 
@@ -887,5 +896,91 @@ Class Notes 06/24
         * Must use synchronized keyword to remove 
 
         Book Recommendation: Java Concurrency In Practice by Brian Goetz (Good book for OS in the Fall)
+
 *************************************************************************************        
+Class Notes 06/26
+
+1). Stand Up 
+     - Since last time?
+       Worked on testing  
+       Reviewed my notes for midterm tomorrow
+       Went to the Tutoring center 
+       Pair programmed w
+     - What I Will do next time?
+       Check in with my team 
+       Finish up maze by tonight
+       Pair program
+     - Blockers
+       Mocking
+
+       Matt, Derek, and Casey:
+       Matt - had to take care of some things - No blockers thanks to Greg
+       Derek - Couldn't get out of work - No blockers
+       Casey - NA - No blockers?
+
+       Team Blockers:
+       Mocking
+       Communication
+       
+2). Beaty Discussion
+    - TEST TOMORROW 
+
+3). Command Pattern - Chapter 6 | Design Patterns
+
+    Wikipedia
+        * A behavioral design pattern in which an object is used to encapsulate all information.
+    Participants
+        * Client is responsible for creating a concrete command and setting its receiver.
+        * Invoke holds a command object and at some points calls its execute() method...
+
+4). Adapter and Facade - Chapter 7 | Design Patterns 
+
+    The Adapter Pattern
+        * Converts the interface of a class into another interface the clients expect
+        * Adapter let classes wok together that couldn't otherwise because of incompatible interfaces.
+    Two types
+        * Object adapters use composition
+        * ...
+    Principle of Least Knowledge
+        * Talk to only immediate friends
+        * Decouples
+        * Law of Demeter
+        * Methods may talk to
+            - Their own object
+            - Objects passed as parameters
+            - Objects they instantiate 
+            - Instance variables
+
+5). Template Method - Chapter 8 | Design Patterns
+
+    Wikipedia
+        * Behavioral design pattern that defines the program skeleton of an algorithm in a operation
+          deferring some steps of a subclass
+        * It lets one redefine certain steps of an algorithm without changing the algorithm's structure
+    Hot Beverage 
+        * for both coffee and teaching 
+            - Hot water (same, in base class)
+            - Use hot water to extract (different, abstract in base class)
+            - Pour into cup (stays the same)
+            - Add condiments (will be different or change)
+        * prepareRecipe is template method
+    prepareRecipe
+        * Is template method
+        * All steps present
+    Hooks
+        * Can define concrete methods that do nothing unless subclass overrides them
+        * Use abstract when subclass must implement, hooks when optional 
+    Hollywood Principle
+        * "Don't call us, we'll call you" (lol)
+        * Low-level hooks into system, high-level calls at the appropriate time
+        * Java Arrays.sort calls compareTo()
+    Summary
+        * To prevent subclasses from changing the algorithm, make the template method final
+        * Both the strategy and template patterns encapsulate algorithms
+            - Strategy via composition
+            - Template via inheritance
+        * Factory is a very specialized template
+            - Returns result from subclass
+    
+        "Factories are abstract" - Beaty 
         
