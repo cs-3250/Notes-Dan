@@ -158,7 +158,8 @@ No Silver Bullet
 -	Accidental complexity VS. essential complexity
 -	There is a difference between an ordinary designer and a great one
 Software Engineering 
--	The study and an application of engineering to the design, development, and maintenance of software. 
+-	The study and an application of engineering to the design, development, and maintenance of 
+    software. 
 -	“Anything with REAL science in the name is a wannabe. Computer Science is not a science.”
 Terminology 
 -	Program Requirements:
@@ -634,7 +635,7 @@ Class Notes 06/19
 
         ! Fractal: an object which has non-integral dimensions !
 
-    Fist Design Principle
+    First Design Principle
         * Identify the aspects of your application that vary and separate them from what 
           stays the same
         * You can alter or extend without affecting other parts
@@ -889,13 +890,15 @@ Class Notes 06/24
     Atomic
         * Reads and writes are atomic for reference variables and for most primitive variables
          (except long anf double)
-        * Reads and writes are atomic for all variables declared volatile (including long and double variables)
+        * Reads and writes are atomic for all variables declared volatile (including long and 
+          double variables)
         * There are also atomicInt and atomicLong
     Volatile Is Not Always Enough 
         * If there is a read/modify/write such as variable++
         * Must use synchronized keyword to remove 
 
-        Book Recommendation: Java Concurrency In Practice by Brian Goetz (Good book for OS in the Fall)
+        Book Recommendation: Java Concurrency In Practice by Brian Goetz (Good book for OS 
+        in the Fall)
 
 *************************************************************************************        
 Class Notes 06/26
@@ -937,7 +940,8 @@ Class Notes 06/26
 
     The Adapter Pattern
         * Converts the interface of a class into another interface the clients expect
-        * Adapter let classes wok together that couldn't otherwise because of incompatible interfaces.
+        * Adapter let classes wok together that couldn't otherwise because of incompatible 
+          interfaces.
     Two types
         * Object adapters use composition
         * ...
@@ -954,9 +958,10 @@ Class Notes 06/26
 5). Template Method - Chapter 8 | Design Patterns
 
     Wikipedia
-        * Behavioral design pattern that defines the program skeleton of an algorithm in a operation
-          deferring some steps of a subclass
-        * It lets one redefine certain steps of an algorithm without changing the algorithm's structure
+        * Behavioral design pattern that defines the program skeleton of an algorithm in 
+        a operation deferring some steps of a subclass
+        * It lets one redefine certain steps of an algorithm without changing the algorithm's 
+          structure
     Hot Beverage 
         * for both coffee and teaching 
             - Hot water (same, in base class)
@@ -983,4 +988,130 @@ Class Notes 06/26
             - Returns result from subclass
     
         "Factories are abstract" - Beaty 
-        
+
+*************************************************************************************        
+Class Notes 07/01
+
+1). Stand Up
+
+2). The Iterator Pattern - Chapter 9 | Design Patterns
+
+    ...
+
+    Java
+        * Enumeration is the older that has been replaced by iterator
+            - iterator allows removal
+    Design Principle
+        * A class should have only one reason to change 
+            - Single-responsibility principle
+        * High cohesion
+            - All methods related to purpose 
+        Question: What is coupling?
+        Cohesion - "every method should touch every instance variables"
+    Composite Pattern
+        * Allows you to compose objects into tree structure to represent part/whole hierarchies
+        * Composite allows clients to treat individual objects and compositions of objects
+        uniformity
+        * We can apply the same operations over both composites and individual objects
+        * Can ignore differences between the two - think recursion
+    Part/Whole 
+        * Animals, mammals, cats, etc.
+            - Resperation, locomotion, etc.
+        * Objects in a science
+            - Texture, stuff, etc.
+
+3). The State Pattern - Chapter 10 | Design Patterns
+
+    State
+        * The combination of the value of all the variables in an object
+        * We use state machines all of the time  
+            - NFAs, DFAs
+        * Automata
+            - Combinational logic
+            - Finite State machines
+            - Pushdown
+            - Turing Machine
+        * Examples: Vending machines, elevator, locks, traffic lights, etc.
+        * Finite State Machine is limited to the amount of memory it has 
+    State Pattern
+        * Allows an object to alter its behavior when its internal state changes
+        * The object will appear to change its class
+        * Very similar to strategy pattern
+            - Strategy an alternative to sub-classing as it uses composition
+            - ...
+        "Decorate pattern makes code much easier to read"
+
+4). Getting a Job
+
+    The Great American Know Who
+        * I've known people at many jobs I've landed
+        * Networking helps
+        * 
+    # 1's 
+        * Maintaining your GPA is the #1 thing you can do
+        * Impressing people in your classes is the other #1 thing you can do
+    LinkedIn
+        * Join it
+    MeetUp 
+        * Find a meetup that matches your interests in a job
+        * DJUG 
+    Twitter
+        * Maybe join it?
+    STOP
+        * Gaming 
+            - Get off the couch
+        * Facebook, Instagram
+        * Watching your favorite sports
+        * Wasting your time 
+            - Time is all we have
+        * Everyone is an expert at something
+            - Choose wisely
+    START
+        * Learn about your field of interest
+        * Being relatable 
+            - Be able to interact with the non-geek
+        * Be nice
+        * Branching out
+            - New languages, etc.
+    Why is Anyone Hired?
+        * Because someone is willing to pay to have a solution to their problem
+        * Be the solution
+    Do the job Before you fet the job
+        * Do research on the company and the position
+        * What tech do they use?
+    Market yourself
+        * Print Business cards
+            - non-school email address
+            - Your Twitter, LinedIn, Github, etc.
+        * Github
+            - Your school work
+            - Gists (Github blog)
+        * Blog 
+        * Write a paper or two
+            - Undergraduate research
+        * Create and give a presentation or two
+    Resumes
+        * Resume will first be filtered by an HR program be buzzword compliant
+        * ~5 seconds to catch someone's attention
+    DON'T
+        * Put your address
+            - You're willing to commute or work from home 
+        * Don't use your school email address
+        * Cute/funny email address and Github login 
+        * Don't list required concourses
+            - List your electives
+        * Don't list your IDEs 
+        * Mention desktop applications 
+        * Put in objectives
+            - Your objective is to get a job (That's it)
+            - Objectives and targeted info can go in a cover letter
+    DO 
+        * Put in your Github and LinkedIn urls
+        * List your languages, either in order (or with level) of experience
+            - Beginner, intermediate, Advanced
+        * List Scrum, Github, Design Patterns, TDD, Travis, SonarCloud
+        * Mention Linux
+        * Say what your role was and what you actually accomplished
+            - Not what you were "responsible for"
+        * Spelling/Grammar/Formatting
+            - Don't change fonts, justification, etc.
