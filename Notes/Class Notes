@@ -900,7 +900,7 @@ Class Notes 06/24
         Book Recommendation: Java Concurrency In Practice by Brian Goetz (Good book for OS 
         in the Fall)
 
-*************************************************************************************        
+*************************************************************************************
 Class Notes 06/26
 
 1). Stand Up 
@@ -989,7 +989,7 @@ Class Notes 06/26
     
         "Factories are abstract" - Beaty 
 
-*************************************************************************************        
+*************************************************************************************
 Class Notes 07/01
 
 1). Stand Up
@@ -1116,7 +1116,7 @@ Class Notes 07/01
         * Spelling/Grammar/Formatting
             - Don't change fonts, justification, etc.
 
-*************************************************************************************        
+*************************************************************************************
 Class Notes 07/03
 
 1). Demo Day
@@ -1164,3 +1164,160 @@ Class Notes 07/03
 
             ACM Tech news 
             "The Morning Paper"
+
+*************************************************************************************
+Class Notes 07/08
+
+1). Stand up 
+    - Since last time?
+       Helped with the Trello  
+       Read a bit effective Java + notes
+     - What I Will do next time?
+       Check up with team
+       Pair program
+     - Blockers
+       None
+
+2). Sprint Review User Story Breakdown
+    1   2   3   5   8   13  21
+
+    User Story: Hold Items - Player and Room
+
+    Room:
+    - Test for existence [3]
+    - Add to list [2]
+    - Remove form list [2]
+
+    Player:
+    - Test for existence [3]
+        * Can we have multiple multiple 
+        * Edge cases
+    - Add to list [2]
+    - Removal from list [2]
+
+    Room: need to research yaml for a load and save
+
+    Spike Ticket - Research save/load from Yaml
+        1). Put in Backlog
+        2). Finish breaking up for later 
+
+    Game --> Rooms ---> Items
+    |           |        ^
+    |           |        |
+    |           |--------> Player
+    Player                  |
+    (user) <----------------|
+
+3). Getting a Job Presentation Continuation
+
+    What You Want
+        * Working at some places is worse than not working in the field for a time
+            - Trailing edge technology that traps you
+            - A place you can't excl in
+            - Churn and burn
+    What to Ask
+        * "Why do you work here?"
+        * "What are the working conditions?"
+        * "What SE lifecycle is used?"
+        * "What is the tool chain?"
+        * HR
+            - How are the benefits?
+                * Health, vacation, retirement?
+    Types of Questions
+        * Computer Science Questions
+        * What have you done?
+    Computer Science
+        * Algorithms and data structures
+        * O of algorithms and choosing 
+        * Imperative vs. Functional
+        http://wwww.nerdparadise.com/tech/interview (Questions that might be asked)
+    What Have You Done?
+        * Make sure you did what is on your resume are ready to talk about it
+        * They are looking for specifics
+        * Give a concrete example
+        * If you don't have an example, say so 
+    Language 
+        * When would you use an anonymous inner class in Java?
+        * What's a lamda?
+            - Know your versions
+        * What's a closure?
+        "Tell them what you know and what you don't know!" - Beaty
+    OO 
+        * What are the major features of OO?
+            - Abstraction, encapsulation, inheritance, and polymorphism
+        * What is an interface?
+        * ...
+        * Deep vs. Shallow composites
+        * Dependency inversion/inversion of control
+            - frameworks
+        * Design Patterns
+    Do Me A SOLID
+        * S - Single-responsibility principle
+        * O - Open-closed principle
+        * L - Liskov substitution principle
+        * I - Interface segregation principle
+        * D - Dependency Inversion Principle
+    OS
+        * Concurrency 
+            - Thread vs. Process
+    Networks
+        * IP v4/6 addressing 
+        * TCP vs UCP
+    Software Engineering
+        * Git, Github
+        * Agile Manifesto
+        * TDD
+        * DRY, YAGNI
+        * CI/CD
+    Web
+        * MVC
+        * ORM
+        * Ajax
+    Questions
+        * "Why are manhole covers round?"
+        * "What is 2^24?"
+        * "How usable addresses in a class C network?"
+        * "What are your strengths and weaknesses?"
+            - No kidding, you should know 
+        * "Why do you want to work here?"
+            - Have an actual answer. Not just money
+    Tough Questions
+        * They typically will ask a few very difficult Questions
+            - Show off 
+            - To see how you reason
+        * How many trees are in the CONUS?
+        * How far away is the moon?
+    Verbal Hints
+        * "We speak not only to tell other people what we think, 
+        but to tell ourselves what we think. Speech is a part of thought." - Oscar Wilde
+        * Don't say "I feel like"
+            - No one cared how you feel
+            - You hopefully mean "I think" or "I believe"
+        * Try to avoid "like"
+            - Unless you're making a simile
+            - Also, "um", "you know", and "got"
+        * Don't use "literally"
+        * Irregardless is not a Word
+            - Regardless is 
+            - Irrespective is
+        * Don't say "methodology"
+        * The word "data" is plural
+        * Don't make jokes - unless you're an expert lol
+        * Be terse and don't Bullshit
+    Guerrilla Interviewing
+        * Looking for smart people to get things done
+        * Introduction
+        * Question about recent project candidate worked on 
+        * Easy Programming Question
+        * Pointer/Recursion Question
+        * Do you have any questions? - YES, YES YOU DO!
+        "Is there anything that I could have done better?" OR 
+        "Is there something I can improve upon?"
+    Some Typical Questions 
+        * Please tell me about yourself
+        * What makes you interested in this position?
+        * Why did you choose this field?
+        * etc.
+    Resources 
+        * Book Recommendation: Cracking the Code
+        * Book Recommendation: Hire With You Head
