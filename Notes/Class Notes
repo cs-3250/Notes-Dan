@@ -1321,3 +1321,142 @@ Class Notes 07/08
     Resources 
         * Book Recommendation: Cracking the Code
         * Book Recommendation: Hire With You Head
+
+*************************************************************************************
+Class Notes 07/10
+
+Was Not in class. Notes from Matt Hurt:
+
+* Consider Static Factory Methods instead of Constructors
+   * One advantage is they have names
+       * Constructors do not and one has to differentiate via parameters
+       * This can be confusing and lead to errors
+   * A class can have only one constructor with a given name
+       * Don’t change order of constructor parameters to differentiate
+   * Static factory methods don’t have to create a new object
+       * Constructors alway do
+       * Maybe there’s an object already created that works
+       * Helps with immutable classes and pre-constructed instances
+   * Singletons, flyweights, non-instantiable
+       * Singletons don’t play well with each other in Python.
+   * Can return a subtype
+       * java.util.collections contains all static methods that work on may types
+       * polymorphic
+       * addAll, binarySearch, disjoint, frequency, min, max, sort, shuffle, reverse, ...
+       * Type returned can be non-public
+       * Can vary implementation
+       * Returned class ned not exist at the time the class is written
+           * Allows run-time specification
+           * JDBC an example
+   * Service provider framework
+       * Service interface
+       * Provider registration
+       * Service access
+       * Optional service provider interface
+           * Factory to create service provider
+   * Java 6
+       * General-purpose java.util.ServiceLoader
+           * So you don’t have to write your own
+   * Disadvantages
+       * Classes without public or protected constructors cannot be sub-classed
+       * Not called out in Javadoc
+   * Popular Java static factory names
+       * valueOf, getInstance, newInstance, getType,...
+   * Consider a Builder when Faced with Many Constructor Parameters
+   * Consider a Builder when faced with many constructor parameters
+   * Create empty instance and have many set()s
+       * Probleminstance in inconsistent state
+   * Builder pattern
+   * Build() is a parameter-less static method
+   * Required parameters passed in to constructor
+       * Optionals set()
+       * Other languages have optional parameters instead
+* Builder for class hierarchies
+   * Recursive type parameters
+   * “Abstract class pizza” - page
+* New York Pizza (book)
+   * Builder gets called with a size and objects call requireNonNull(size)
+   * When you are extending an abstract class it
+* Calzone
+* Enforce the singleton property with a private constructor or an enum type
+   * Up to 1.5, two ways….
+* Private no-Arg constructor
+* 1.5: Enumeration
+* Enforec non_instatiability with private constructor
+   * Just have a private no-args constructor
+       * If have any no-args constructor, the default isn’t created
+   * Class connote be sub-classed
+       * Subclasses would need to call constructor
+       * Might want to have constructor throw and AssertionError
+           * Just be safe
+
+*************************************************************************************
+Class Notes 07/11
+
+1). Stand Up
+    - Since last time?
+       Worked with David on movement
+       reading effective java book 
+     - What I Will do next time?
+       Pair program with David and Edwin
+     - Blockers
+       None
+2). Chapter 2 | Effective Java
+
+    Prefer Dependency Injection
+        * Helps preserve immunity
+        * Works for constructors, factories, and builders
+        * can pass factory into constructors
+            - Mosaic create(SUpplier<? Extends Title> titleFactory) {...}
+        * Use DI frameworks
+            - Makes code easier to rewrite: single source of edit, 
+              makes the edit less complex.
+    Avoid Creating Unnecessary Objects
+        * Use literals and valueOf()
+        * Anything that is immutable
+        * Anything that is stateless 
+            - E.g.: adapters
+    So
+        * Be careful about the auto-unboxing in Java for runtime to be faster
+        * Try hard not to not mange memory
+        * Nulling object references should be very unusual 
+    Avoid Finalizers 
+        * Unpredictable, often dangerous, generally unnecessary
+        * Unlike C++ destructors
+            - These are called immediately
+            - Java uses try/finally for these types of uses
+        * One never knows when a finalizer is called
+            - Part of garbage collection
+            - Might not be called at all
+        * Don't e.g. close files as there is a limited number of open files 
+        * Finalizers are slow and unchained
+        * If really functionality, private resources...
+        * there are finalizer attacks
+            - Create final finalize method to protected
+        * Implement AutoCloseable
+            - Have to have close method --> try-with-resources statements
+
+3). Methods Common to All Objects - Chapter 3 | Effective Java
+    
+    Obey the General Contract when Overriding Equals
+        Sometimes you don't need to
+            - When all object are unique, such as threads 
+            - When you don't need it, such as with random number generators
+            - Superclass equals works well, such as sets, lists, and maps 
+              getting from Abstract, etc.
+              ...
+        When to Implement?
+            * When logical equality (.equals) is different from the simple 
+              object identity (==)
+            * This is the typical case as classes have state, kept by 
+              variables with values
+            * Tests fore equivalence, not the same object
+            * When we need the class to be map keys or set elements
+        Must Implement an Equivalence 
+            * Must be reflective: x.equals(x) must return true 
+            * Must be symmetric:
+            * Etc...
+        So? 
+            * There is no wat to extend an instantiable class and a value while 
+              preserving the equals contract
+            * You can safely add values to a subclass of an abstract class
