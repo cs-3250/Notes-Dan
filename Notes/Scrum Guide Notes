@@ -2,149 +2,253 @@ Scrum Guide Notes
 
 What is Scrum?
 
-“Scrum: A framework within which people can address complex adaptive problems, while productively and creatively delivering products of the highest possible value.” (Schwaber and Sutherland 3)
+“Scrum: A framework within which people can address complex adaptive problems, 
+while productively and creatively delivering products of the highest possible 
+value.” (Schwaber and Sutherland 3)
 
-Scrum is a way to not only have an effective working environment it’s also a framework to help keep development organized. It includes things such as “assigned roles, artifacts, and governing relationships” to help make it so effective. 
+Scrum is a way to not only have an effective working environment it’s also a 
+framework to help keep development organized. It includes things such as 
+“assigned roles, artifacts, and governing relationships” to help make it so 
+effective. 
 
 Uses of Scrum 
 
-Scrum has been used is a wide variety of different ways whether it’s in technology, business, government, healthcare, etc. Regardless if it’s with products, services, or management; Scrum is able to deliver if everyone involved is on board. 
+Scrum has been used is a wide variety of different ways whether it’s in 
+technology, business, government, healthcare, etc. Regardless if it’s with 
+products, services, or management; Scrum is able to deliver if everyone 
+involved is on board. 
 
--	Scrum Theory: “Empiricism asserts that knowledge comes from experience and making decisions based on what is known.” (Schwaber and Sutherland 4) 
+- Scrum Theory: “Empiricism asserts that knowledge comes from 
+experience and making decisions based on what is known.” 
+(Schwaber and Sutherland 4) 
 
 The Three Pillars of Scrum Are:
 
-o	Transparency – Having a clear idea of not only what the goal is or “Done” but as well as having a clear grasp of what the outcome will be for the observers.
+o Transparency – Having a clear idea of not only what the goal is or “Done” 
+but as well as having a clear grasp of what the outcome will be for the observers.
 
-o	Inspection – Checking in when it is deemed appropriate to make sure that the team is working towards the Sprint Goal and not over inspecting to the point it gets in the way of the project.
+o Inspection – Checking in when it is deemed appropriate to make sure that the 
+team is working towards the Sprint Goal and not over inspecting to the point it 
+gets in the way of the project.
 
-o	Adaption – Making sure that the team is able to adjust to minimize deviation from the Sprint Goal. 
+o Adaption – Making sure that the team is able to adjust to minimize deviation 
+from the Sprint Goal. 
 
 The Scrum Team
 
--	Product Owner – Responsible for taking sole responsibility of the Product Backlog to maximize the development team’s efforts.
+- Product Owner – Responsible for taking sole responsibility of the Product Backlog 
+to maximize the development team’s efforts.
 
-o	Ordering Product Backlog to achieve the Sprint Goal at best
-o	Optimize the efforts of the Development Team
-o	Making sure the Development Team understands the Product Backlog 
-o	Product Backlog is transparent, easy to understand, and shows what the team will work on next.
+o Ordering Product Backlog to achieve the Sprint Goal at best
+o Optimize the efforts of the Development Team
+o Making sure the Development Team understands the Product Backlog 
+o Product Backlog is transparent, easy to understand, and shows what the team will 
+work on next.
 
-The Product Owner represents the desires of the client through the Product Backlog. If item priorities need to be changed within the Product Backlog, then they must go through the Product Owner first. The Development Team must respect the Product owner’s decisions and the Product Owner must make their decisions visible to the rest of the team. 
+The Product Owner represents the desires of the client through the Product Backlog. 
+If item priorities need to be changed within the Product Backlog, then they must go 
+through the Product Owner first. The Development Team must respect the Product owner’s 
+decisions and the Product Owner must make their decisions visible to the rest of the team. 
 	
--	Development Team – Consisting of professionals who work on reaching the “Done” product at the end of each sprint. They are a team of people who work on their own work to optimize the team’s efforts in efficiency.
+- Development Team – Consisting of professionals who work on reaching the “Done” product 
+at the end of each sprint. They are a team of people who work on their own work to optimize 
+the team’s efforts in efficiency.
 
-o	Self-organizing. No one tells the Development Team how to tackle the Product Backlog
-o	There are no titles for the Development Team members and no sub-teams for testing, architecture, operations, etc.
-o	The members may have specialized skills, but accountability belongs to the entire team.
+o Self-organizing. No one tells the Development Team how to tackle the Product Backlog
+o There are no titles for the Development Team members and no sub-teams for testing, 
+architecture, operations, etc.
+o The members may have specialized skills, but accountability belongs to the entire team.
 
--	Scrum Master – Responsible for promoting/supporting Scrum to the team. The Scrum Master helps those outside of the Scrum Team to understand what will be best suitable for the team as a whole. 
+- Scrum Master – Responsible for promoting/supporting Scrum to the team. The Scrum Master 
+helps those outside of the Scrum Team to understand what will be best suitable for the 
+team as a whole. 
 	
 	Scrum Master Service to the Product Owner
-o	Ensuring goals, scope, and product domain are transparent to everyone
-o	Effective techniques for Product Backlog management
-o	Helping the team understand clear and concise Product Backlog items
-o	Ensuring the Product Owner knows how to arrange the Product Backlog
-o	Facilitating Scrum events as requested or needed
+o Ensuring goals, scope, and product domain are transparent to everyone
+o Effective techniques for Product Backlog management
+o Helping the team understand clear and concise Product Backlog items
+o Ensuring the Product Owner knows how to arrange the Product Backlog
+o Facilitating Scrum events as requested or needed
 
 	Scrum Master Service to the Development Team
-o	Coaching the Development Team in self-organization
-o	Help the Development Team to create high-value products
-o	Removes blockers from the Development Team’s progress
-o	Facilitating Scrum events as requested or needed
+o Coaching the Development Team in self-organization
+o Help the Development Team to create high-value products
+o Removes blockers from the Development Team’s progress
+o Facilitating Scrum events as requested or needed
 
 	Scrum Master Service to the Organization
-o	Leading/coaching the organization in Scrum adoption
-o	Planning Scrum implementations within the organization
-o	Helping employees and shakeholders understand and enact Scrum
-o	Effect change to increase productivity of the Scrum Team
+o Leading/coaching the organization in Scrum adoption
+o Planning Scrum implementations within the organization
+o Helping employees and shakeholders understand and enact Scrum
+o Effect change to increase productivity of the Scrum Team
 
 Scrum Events 
 
-Time-boxed events that create regularity within the team when a Sprint begins. Sprints are set in stone, which means that they can’t be shortened or lengthened, and they end whenever the purpose the event is achieved.  
+Time-boxed events that create regularity within the team when a Sprint begins. 
+Sprints are set in stone, which means that they can’t be shortened or lengthened, 
+and they end whenever the purpose the event is achieved.  
 
--	The Sprint – A timed-box one month or less event which completes with a “Done”, useable, and potentially releasable product. The Sprint consists of the Sprint Planning, Daily Scrums, the Development Team work, the Sprint Review, and the Sprint Retrospective.
+- The Sprint – A timed-box one month or less event which completes with a “Done”, 
+useable, and potentially releasable product. The Sprint consists of the Sprint Planning, 
+Daily Scrums, the Development Team work, the Sprint Review, and the Sprint Retrospective.
 
 	During the Sprint: 
-o	No changes are made to endanger the Sprint Goal
-o	Quality goals don’t decrease
-o	Scope may be clarified and re-negotiated between the Product Owner and the Development Team
+o No changes are made to endanger the Sprint Goal
+o Quality goals don’t decrease
+o Scope may be clarified and re-negotiated between the Product Owner and the Development Team
 
-Each Sprint a portion of the project will need to be completed. The goal for said Sprints are asking, “what needs to be build?”, “what will be our plan to complete said project?”, and “how do we divvy up this work between us all?”.
+Each Sprint a portion of the project will need to be completed. The goal for said Sprints 
+are asking, “what needs to be build?”, “what will be our plan to complete said project?”, 
+and “how do we divvy up this work between us all?”.
 
-When a Sprint’s horizon is too long the definition of what is being made may change, complexity arises, and risk may increase as well. So to alleviate this Sprints are either a month or less. For or cases we will have 5 two week sprints.
+When a Sprint’s horizon is too long the definition of what is being made may change, 
+complexity arises, and risk may increase as well. So to alleviate this Sprints are either 
+a month or less. For or cases we will have 5 two week sprints.
 
 	Cancelling a Sprint:
-	A Sprint may be canceled before the Sprint time-box is over. The reason for a Sprint to 	be cancelled would be if the Sprint goal becomes obsolete. Only the Product Owner has 	the authority to cancel a Sprint, however they may do so under influence of the 	stakeholders, the Development Team, or the Scrum Master. Cancellations rarely occur.
+	A Sprint may be canceled before the Sprint time-box is over. The reason for 
+	a Sprint to be cancelled would be if the Sprint goal becomes obsolete. Only the 
+	Product Owner has the authority to cancel a Sprint, however they may do so under 
+	influence of the stakeholders, the Development Team, or the Scrum Master. 
+	Cancellations rarely occur.
 
-	Any completed and “Done” Product Backlog items are reviewed incase part of the work 	is potentially releasable, only if the Product Owner accepts it. So then all of the 	incomplete items in the Product Backlog are re-estimated before they depreciate. 
+	Any completed and “Done” Product Backlog items are reviewed incase part of the 
+	work is potentially releasable, only if the Product Owner accepts it. So then all 
+	of the incomplete items in the Product Backlog are re-estimated before they depreciate. 
 
--	Sprint Planning – The work performed in a Sprint is planned at the Sprint Planning phase. A time-boxed event that is eight hours for a one-month Sprint, and usually answers the questions of “what can be delivered?” and “How will the work needed achieve said goal?”.
+-	Sprint Planning – The work performed in a Sprint is planned at the Sprint Planning phase. 
+	A time-boxed event that is eight hours for a one-month Sprint, and usually answers the questions 
+	of “what can be delivered?” and “How will the work needed achieve said goal?”.
 
 	“What Can Be Done This Sprint?”
 	
-	The Development Team works on the functionality the Sprint that will be focused on. 	The Product Owner finds the objective of the Sprint and what needs to be achieved via 	the Product Backlog items, that if completed within the Sprint, will achieve the Sprint 	Goal. The main focus is what needs to go into the Product Backlog, the latest product 	Increment, and any past performance of the Development Team that should be 	reviewed.
+	The Development Team works on the functionality the Sprint that will be focused on. 
+	The Product Owner finds the objective of the Sprint and what needs to be achieved via 
+	the Product Backlog items, that if completed within the Sprint, will achieve the Sprint 
+	Goal. The main focus is what needs to go into the Product Backlog, the latest product. 
+	Increment, and any past performance of the Development Team that should be reviewed.
 	
 	“How Will the Chosen Work Get Done?”
 
-	Once the Sprint Goal and the Product Backlog items of the Sprint have been decided it 	then comes down to the understanding of what “Done” should be considered. As well as 	placing important items from the Product Backlog into the Sprint Backlog.
+	Once the Sprint Goal and the Product Backlog items of the Sprint have been decided it 
+	then comes down to the understanding of what “Done” should be considered. As well as 
+	placing important items from the Product Backlog into the Sprint Backlog.
 
-	The Development Team works on converting the Product Backlog Items into a working 	product Increment based on the Sprint Planning phase. The Product Owner can help to 	clarify specific Product Backlog tasks that are most important and the Development 	Team and negotiate whether it’s too little or too much work. By the end of the Sprint 	Planning, The Development Team should be able to explain to the Product Owner and 	the Scrum Master how it will accomplish the Sprint Goal. 
+	The Development Team works on converting the Product Backlog Items into a working 
+	product Increment based on the Sprint Planning phase. The Product Owner can help to 
+	clarify specific Product Backlog tasks that are most important and the Development 
+	Team and negotiate whether it’s too little or too much work. By the end of the Sprint 
+	Planning, The Development Team should be able to explain to the Product Owner and 
+	the Scrum Master how it will accomplish the Sprint Goal. 
 		 
-	Sprint Goal
+Sprint Goal
 
-	This is the objective set that will be met through the implantation of the Product 	Backlog. This goal is created during the Sprint Planning phase and will provide guidance 	to the Development Team with their tasks through the Product Backlog. The Sprint Goal 	is what causes the Development Team to work together rather than separate. 
+	This is the objective set that will be met through the implantation of the Product 
+	Backlog. This goal is created during the Sprint Planning phase and will provide guidance 
+	to the Development Team with their tasks through the Product Backlog. The Sprint Goal 
+	is what causes the Development Team to work together rather than separate. 
 	
-	If the work turns out to be different than the Development Team expected they then 	collaborate with the Product Owner to renegotiate the scope of the Sprint Backlog 	within the Sprint. 
+	If the work turns out to be different than the Development Team expected they then 
+	collaborate with the Product Owner to renegotiate the scope of the Sprint Backlog 
+	within the Sprint. 
 
--	Daily Scrum – A 15-miute time-boxed event for the Development Team to plan the next 24 hours. The Daily Scrum is held at the same time and place (for the most part) and will forecast the upcoming Sprint work.
+-	Daily Scrum – A 15-minute time-boxed event for the Development Team to plan the next 
+	24 hours. The Daily Scrum is held at the same time and place (for the most part) and will 
+	forecast the upcoming Sprint work.
 	
-	The Development Team uses the Daily Scrum to inspect progress toward the Sprint Goal 	and to inspect how progress is trending toward completing the work in the Sprint 	Backlog. The Daily Scrum optimizes the probability that the Development Team will 	meet the Sprint Goal. Every day, the Development Team should understand how it 	intends to work together as a self-organizing team to accomplish the Sprint Goal and 	create the anticipated Increment by the end of the Sprint.
+	The Development Team uses the Daily Scrum to inspect progress toward the Sprint Goal 
+	and to inspect how progress is trending toward completing the work in the Sprint 
+	Backlog. The Daily Scrum optimizes the probability that the Development Team will 
+	meet the Sprint Goal. Every day, the Development Team should understand how it 
+	intends to work together as a self-organizing team to accomplish the Sprint Goal and 
+	create the anticipated Increment by the end of the Sprint.
 	
 o	What did I do yesterday that helped the Development Team meet the Sprint Goal?
 o	What will I do today to help the Development Team meet the Sprint Goal?
 o	Do I see any impediment that prevents me or the Development Team from meeting the Sprint Goal?
-	The Development Team or team members often meet immediately after the Daily 	Scrum for detailed discussions, or to adapt, or re-plan, the rest of the Sprint’s work. 
+	The Development Team or team members often meet immediately after the Daily 
+	Scrum for detailed discussions, or to adapt, or re-plan, the rest of the Sprint’s work. 
 
-	The Daily Scrum is an internal meeting for the Development Team. If others are present, 	the Scrum Master ensures that they do not disrupt the meeting. 
+	The Daily Scrum is an internal meeting for the Development Team. If others are present, 
+	the Scrum Master ensures that they do not disrupt the meeting. 
 
-	Daily Scrums improve communications, eliminate other meetings, identify impediments 	to development for removal, highlight and promote quick decision-making, and improve 	the Development Team’s level of knowledge. This is a key inspect and adapt meeting
+	Daily Scrums improve communications, eliminate other meetings, identify impediments 
+	to development for removal, highlight and promote quick decision-making, and improve 
+	the Development Team’s level of knowledge. This is a key inspect and adapt meeting
 
--	Sprint Review - A Sprint Review is held at the end of the Sprint to inspect the Increment and adapt the Product Backlog if needed. 
+-	Sprint Review - A Sprint Review is held at the end of the Sprint to inspect the Increment 
+	and adapt the Product Backlog if needed. 
 
-	During the Sprint Review, the Scrum Team and stakeholders collaborate about what was 	done in the Sprint. Based on that and any changes to the Product Backlog during the 	Sprint, 	attendees collaborate on the next things that could be done to optimize value. 	This is an informal meeting, not a status meeting, and the presentation of the Increment 	is intended to elicit feedback and foster collaboration.
+	During the Sprint Review, the Scrum Team and stakeholders collaborate about what was 
+	done in the Sprint. Based on that and any changes to the Product Backlog during the 
+	Sprint, attendees collaborate on the next things that could be done to optimize value. 
+	This is an informal meeting, not a status meeting, and the presentation of the Increment 
+	is intended to elicit feedback and foster collaboration.
 
-o	The Product Owner explains what Product Backlog items have been “Done” and what has not been “Done”
-o	The Development Team discusses what went well during the Sprint, what problems it ran into, and how those problems were solved;
-o	The entire group collaborates on what to do next, so that the Sprint Review provides valuable input to subsequent Sprint Planning
-o	Review of the timeline, budget, potential capabilities, and marketplace for the next anticipated releases of functionality or capability of the product
+o	The Product Owner explains what Product Backlog items have been “Done” and what has 
+	not been “Done”
+o	The Development Team discusses what went well during the Sprint, what problems it 
+	ran into, and how those problems were solved;
+o	The entire group collaborates on what to do next, so that the Sprint Review 
+	provides valuable input to subsequent Sprint Planning
+o	Review of the timeline, budget, potential capabilities, and marketplace for the next
+ 	anticipated releases of functionality or capability of the product
 
--	Sprint Retrospective – The Sprint Retrospective is an opportunity for the Scrum Team to inspect itself and create a plan for improvements to be enacted during the next Sprint.
+-	Sprint Retrospective – The Sprint Retrospective is an opportunity for the Scrum Team 
+	to inspect itself and create a plan for improvements to be enacted during the next Sprint.
 	
-	The Scrum Master ensures that the meeting is positive and productive. The Scrum 	Master teaches all to keep it within the time-box. The Scrum Master participates as a 	peer team member in the meeting from the accountability over the Scrum process.
+	The Scrum Master ensures that the meeting is positive and productive. The Scrum 
+	Master teaches all to keep it within the time-box. The Scrum Master participates as a 
+	peer team member in the meeting from the accountability over the Scrum process.
 
 	 The purpose of the Sprint Retrospective is to:
 o	Inspect how the last Sprint went with regards to people, relationships, process, and tools
 o	Identify and order the major items that went well and potential improvements;
 o	Create a plan for implementing improvements to the way the Scrum Team does its work
 	
-	By the end of the Sprint Retrospective, the Scrum Team should have identified 	improvements that it will implement in the next Sprint. Implementing these 	improvements in the next Sprint is the adaptation to the inspection of the Scrum Team 	itself. Although improvements may be implemented at any time, the Sprint 	Retrospective provides a formal opportunity to focus on inspection and adaptation
+	By the end of the Sprint Retrospective, the Scrum Team should have identified 
+	improvements that it will implement in the next Sprint. Implementing these 
+	improvements in the next Sprint is the adaptation to the inspection of the Scrum Team 
+	itself. Although improvements may be implemented at any time, the Sprint Retrospective 
+	provides a formal opportunity to focus on inspection and adaptation
 	
 Scrum Artifacts 
 
 -	Product Backlog – An ordered list of everything that is known to be needed in the product. 
 
-	The Product Owner is responsible for the Product Backlog, including its content, 	availability, and ordering. The Product Backlog is never complete. It evolves based on 	the product and the environment it is in. It is consistently in flux with change and exists 	if a product exists. It lists all of the features, functions, requirements, enhancements, 	and fixes for the product release. As well as descriptions, order, estimations, and value. 
+	The Product Owner is responsible for the Product Backlog, including its content, 
+	availability, and ordering. The Product Backlog is never complete. It evolves based on 
+	the product and the environment it is in. It is consistently in flux with change and exists 
+	if a product exists. It lists all of the features, functions, requirements, enhancements, 
+	and fixes for the product release. As well as descriptions, order, estimations, and value. 
 	
-	More precise estimates are based on higher clarity and increased detail while the lower 	order has less clarity and detail. The Development Team will worry about the Product 	Backlog for the upcoming Sprint so that items can be considered reasonably “Done” 	within the Sprint time-box. 
+	More precise estimates are based on higher clarity and increased detail while the lower 
+	order has less clarity and detail. The Development Team will worry about the Product 
+	Backlog for the upcoming Sprint so that items can be considered reasonably “Done” 
+	within the Sprint time-box. 
 
--	Sprint Backlog – A forecast by the Development Team about what functionality will be in the next Increment and the work needed to deliver that functionality into a “Done” Increment.
+-	Sprint Backlog – A forecast by the Development Team about what functionality will be 
+	in the next Increment and the work needed to deliver that functionality into a “Done” Increment.
 
-	The Sprint Backlog is transparent for the entire team to see and what identifies as 	necessary to meet the Sprint Goal. Meaning that whatever improvements were 	suggested during the previous Retrospective meeting. The Development Team are the 	ones that modify the Sprint Backlog throughout the sprint, and the Sprint Backlog 	emerges during the Sprint. 	
+	The Sprint Backlog is transparent for the entire team to see and what identifies as 
+	necessary to meet the Sprint Goal. Meaning that whatever improvements were 	suggested 
+	during the previous Retrospective meeting. The Development Team are the ones that 
+	modify the Sprint Backlog throughout the sprint, and the Sprint Backlog emerges during 
+	the Sprint. 	
 
 Artifact Transparency
 
--	Definition of “Done” – “Done” is a term used to describe when a Product Backlog item has been completed. 
+-	Definition of “Done” – “Done” is a term used to describe when a Product Backlog 
+	item has been completed. 
 
-	A formal understanding of what the term “Done” is accepted consciously with the team 	and what it means for said item to be finished. The point of each Sprint is to deliver a 	portion of a releasable functioning product, so the Scrum Team must adhere to it. If the 	definition of “Done” is part of the conventions, standards or guidelines, then all Scream 	Teams must follow it.
+	A formal understanding of what the term “Done” is accepted consciously with the team 
+	and what it means for said item to be finished. The point of each Sprint is to deliver a 
+	portion of a releasable functioning product, so the Scrum Team must adhere to it. If the 
+	definition of “Done” is part of the conventions, standards or guidelines, then all Scream 
+	Teams must follow it.
 
-	If “Done” for an increment is not a convention of development organization, then a new 	definition of “Done” must be defined. Each Increment for the project must be additive 	to all prior Increments and tested as well. As Scrum Teams mature their definitions of 	“Done” will expand more stringent criteria for higher quality. Any one product or system 	should have a definition of “Done” as a rule of thumb. 
+	If “Done” for an increment is not a convention of development organization, then a new 
+	definition of “Done” must be defined. Each Increment for the project must be additive 
+	to all prior Increments and tested as well. As Scrum Teams mature their definitions of 
+	“Done” will expand more stringent criteria for higher quality. Any one product or system 
+	should have a definition of “Done” as a rule of thumb. 
