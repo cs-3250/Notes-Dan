@@ -1460,3 +1460,114 @@ Class Notes 07/11
             * There is no wat to extend an instantiable class and a value while 
               preserving the equals contract
             * You can safely add values to a subclass of an abstract class
+
+*************************************************************************************
+Class Notes 07/15
+
+1). Stand Up
+    - Since last time?
+        Pair programmed with Derek
+        Disagreement resolved
+        Reading effective java book 
+     - What I Will do next time?
+        Pair program with my team after class
+        Finish up CLI tests with Greg
+     - Blockers
+       None
+
+2). Methods Common to All Objects - Chapter 3 | Effective Java (Continuation)
+
+        Consistency
+            * do no write an equals method that depends on unreliable resources
+            * Java's URL equals relies on IP address comparison
+                - What happens when not no network?
+                - What happens when network addresses change?
+        Recipe
+            * Check object == this
+            * Use instanceOf to check for correct type
+            * Cast argument to correct type
+            * Test == for all significant fields
+                - Except for Float.compare, Double,compare, and Arrays.equal
+            * Also override hashCode
+            * Use @Override
+        Always Override HashCode When You Override Equals
+            * Invoked on the same object, and the object hasn't changed to affect 
+            equals, always return the same integer
+            * If two objects are equals, both hashCodes must be the same
+            * If they are not equals, it is not required to product distinct hashCodes
+                - If not, hash table performance can be affected
+                - "return 42" is legal, but horrible
+        Creating a hashCode
+            * Exclude any redundant fields
+                - Should have only one expression overall
+            * Ignore any fields ignored by equals 
+        Creating hashCode Code (Java Slide)
+        Always Override toString
+            * Makes class much more pleasant ro use 
+            * When practical, toString should return all interesting information in object
+            * One has to choose the format returned
+                - Good idea ti create a constructor or static factory that takes 
+                  string representation and creates object 
+            * Provide access to values in toString via getters
+        Override Clone Judiously
+            * Creates and returns a copy of an object
+                - x.clone() != x
+                - c.lone 
+                ...
+        More Clones
+            * No need to provide clone for immutable objects
+            * Instead, can provide copy constructor or factory
+                - public Foo(Foo foo)
+                - public static Foo newInstance(Foo foo)
+            * Interfaces should not extend Cloneable
+            * Classes designed for inheritance should not implement it
+        Consider Implementing Comparable
+            * Similar to equals 
+                - But provides ordering information
+                - Is generic
+                - Useful in e.g. Arrays.sort()
+            * Returns comparison between two objects
+                - -1 if first less than second 
+                - 0 if equals to
+                - 1 if greater than
+        compareTo (Different examples of Java compareTos') 
+        Compare verses Equals (Java Code Slide)
+
+3). Classes and Interfaces - Chapter 4 | Effective Java
+        
+        Minimize the Accessibility of Classes and Members 
+            * (Long quote)
+            * Encapsulation
+            * Decouples modules allowing them to be developed, tested, optimized,
+              used, understood, and modified in isolation
+            * Make each class or remember aas inaccessible as possible
+            * If used nowhere else, nest a class within the class that uses it
+            * Don't make any variable/field/attribute public 
+                - worst make it a private package 
+            * Try to avoid protected too
+                - Must always support
+                - Exposes implementation detail to subclasses
+                - Should be rare
+            * If a Method overrides a superclass method, it must have the same 
+              access level
+                - To not violate the Liskov inversion principle
+            * Implementing an interface requires all methods to be public
+                - Implicit in implementing an interface
+            * Instance field should never be public 
+            * Instance field should never be public
+                - Limits typing 
+                - Limits invariants 
+                - Are not thread-safe
+            * Array are always mutable
+                - Never have a public static final array field
+                - Or an accessor that returns such a beast
+                - Be careful of IDEs that create accessors automatically
+        In Public Classes, Use Accessor Methods, not Public Fields
+            * book still insists on using lame examples of sets instead of 
+              simply making fields public
+                - With the ostensible argument that we can change internal representation
+                    # but we never do
+                    # And if we do, we break the preexisting API contract
+                - Less harmful if immutable
+                
+*************************************************************************************
