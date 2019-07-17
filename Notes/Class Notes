@@ -1016,7 +1016,7 @@ Class Notes 07/01
         * Can ignore differences between the two - think recursion
     Part/Whole 
         * Animals, mammals, cats, etc.
-            - Resperation, locomotion, etc.
+            - Respiration, locomotion, etc.
         * Objects in a science
             - Texture, stuff, etc.
 
@@ -1365,7 +1365,7 @@ Was Not in class. Notes from Matt Hurt:
    * Consider a Builder when Faced with Many Constructor Parameters
    * Consider a Builder when faced with many constructor parameters
    * Create empty instance and have many set()s
-       * Probleminstance in inconsistent state
+       * Problem instance in inconsistent state
    * Builder pattern
    * Build() is a parameter-less static method
    * Required parameters passed in to constructor
@@ -1382,7 +1382,7 @@ Was Not in class. Notes from Matt Hurt:
    * Up to 1.5, two ways….
 * Private no-Arg constructor
 * 1.5: Enumeration
-* Enforec non_instatiability with private constructor
+* Enforce non_insatiability with private constructor
    * Just have a private no-args constructor
        * If have any no-args constructor, the default isn’t created
    * Class connote be sub-classed
@@ -1477,97 +1477,177 @@ Class Notes 07/15
 
 2). Methods Common to All Objects - Chapter 3 | Effective Java (Continuation)
 
-        Consistency
-            * do no write an equals method that depends on unreliable resources
-            * Java's URL equals relies on IP address comparison
-                - What happens when not no network?
-                - What happens when network addresses change?
-        Recipe
-            * Check object == this
-            * Use instanceOf to check for correct type
-            * Cast argument to correct type
-            * Test == for all significant fields
-                - Except for Float.compare, Double,compare, and Arrays.equal
-            * Also override hashCode
-            * Use @Override
-        Always Override HashCode When You Override Equals
-            * Invoked on the same object, and the object hasn't changed to affect 
-            equals, always return the same integer
-            * If two objects are equals, both hashCodes must be the same
-            * If they are not equals, it is not required to product distinct hashCodes
-                - If not, hash table performance can be affected
-                - "return 42" is legal, but horrible
-        Creating a hashCode
-            * Exclude any redundant fields
-                - Should have only one expression overall
-            * Ignore any fields ignored by equals 
-        Creating hashCode Code (Java Slide)
-        Always Override toString
-            * Makes class much more pleasant ro use 
-            * When practical, toString should return all interesting information in object
-            * One has to choose the format returned
-                - Good idea ti create a constructor or static factory that takes 
-                  string representation and creates object 
-            * Provide access to values in toString via getters
-        Override Clone Judiously
-            * Creates and returns a copy of an object
-                - x.clone() != x
-                - c.lone 
-                ...
-        More Clones
-            * No need to provide clone for immutable objects
-            * Instead, can provide copy constructor or factory
-                - public Foo(Foo foo)
-                - public static Foo newInstance(Foo foo)
-            * Interfaces should not extend Cloneable
-            * Classes designed for inheritance should not implement it
-        Consider Implementing Comparable
-            * Similar to equals 
-                - But provides ordering information
-                - Is generic
-                - Useful in e.g. Arrays.sort()
-            * Returns comparison between two objects
-                - -1 if first less than second 
-                - 0 if equals to
-                - 1 if greater than
-        compareTo (Different examples of Java compareTos') 
-        Compare verses Equals (Java Code Slide)
+    Consistency
+        * do no write an equals method that depends on unreliable resources
+        * Java's URL equals relies on IP address comparison
+            - What happens when not no network?
+            - What happens when network addresses change?
+    Recipe
+        * Check object == this
+        * Use instanceOf to check for correct type
+        * Cast argument to correct type
+        * Test == for all significant fields
+            - Except for Float.compare, Double,compare, and Arrays.equal
+        * Also override hashCode
+        * Use @Override
+    Always Override HashCode When You Override Equals
+        * Invoked on the same object, and the object hasn't changed to affect 
+          equals, always return the same integer
+        * If two objects are equals, both hashCodes must be the same
+        * If they are not equals, it is not required to product distinct hashCodes
+            - If not, hash table performance can be affected
+            - "return 42" is legal, but horrible
+    Creating a hashCode
+        * Exclude any redundant fields
+            - Should have only one expression overall
+        * Ignore any fields ignored by equals 
+    Creating hashCode Code (Java Slide)
+    Always Override toString
+        * Makes class much more pleasant ro use 
+        * When practical, toString should return all interesting information in object
+        * One has to choose the format returned
+            - Good idea ti create a constructor or static factory that takes 
+              string representation and creates object 
+        * Provide access to values in toString via getters
+    Override Clone Judiciously
+        * Creates and returns a copy of an object
+            - x.clone() != x
+            - c.lone 
+            ...
+    More Clones
+        * No need to provide clone for immutable objects
+        * Instead, can provide copy constructor or factory
+            - public Foo(Foo foo)
+            - public static Foo newInstance(Foo foo)
+        * Interfaces should not extend Cloneable
+        * Classes designed for inheritance should not implement it
+    Consider Implementing Comparable
+        * Similar to equals 
+            - But provides ordering information
+            - Is generic
+            - Useful in e.g. Arrays.sort()
+        * Returns comparison between two objects
+            - -1 if first less than second 
+            - 0 if equals to
+            - 1 if greater than
+    compareTo (Different examples of Java compareTos') 
+    Compare verses Equals (Java Code Slide)
 
 3). Classes and Interfaces - Chapter 4 | Effective Java
         
-        Minimize the Accessibility of Classes and Members 
-            * (Long quote)
-            * Encapsulation
-            * Decouples modules allowing them to be developed, tested, optimized,
-              used, understood, and modified in isolation
-            * Make each class or remember aas inaccessible as possible
-            * If used nowhere else, nest a class within the class that uses it
-            * Don't make any variable/field/attribute public 
-                - worst make it a private package 
-            * Try to avoid protected too
-                - Must always support
-                - Exposes implementation detail to subclasses
-                - Should be rare
-            * If a Method overrides a superclass method, it must have the same 
-              access level
-                - To not violate the Liskov inversion principle
-            * Implementing an interface requires all methods to be public
-                - Implicit in implementing an interface
-            * Instance field should never be public 
-            * Instance field should never be public
-                - Limits typing 
-                - Limits invariants 
-                - Are not thread-safe
-            * Array are always mutable
-                - Never have a public static final array field
-                - Or an accessor that returns such a beast
-                - Be careful of IDEs that create accessors automatically
-        In Public Classes, Use Accessor Methods, not Public Fields
-            * book still insists on using lame examples of sets instead of 
-              simply making fields public
-                - With the ostensible argument that we can change internal representation
-                    # but we never do
-                    # And if we do, we break the preexisting API contract
-                - Less harmful if immutable
-                
+    Minimize the Accessibility of Classes and Members 
+        * (Long quote)
+        * Encapsulation
+        * Decouples modules allowing them to be developed, tested, optimized,
+          used, understood, and modified in isolation
+        * Make each class or remember aas inaccessible as possible
+        * If used nowhere else, nest a class within the class that uses it
+        * Don't make any variable/field/attribute public 
+            - worst make it a private package 
+        * Try to avoid protected too
+            - Must always support
+            - Exposes implementation detail to subclasses
+            - Should be rare
+        * If a Method overrides a superclass method, it must have the same 
+          access level
+            - To not violate the Liskov inversion principle
+        * Implementing an interface requires all methods to be public
+            - Implicit in implementing an interface
+        * Instance field should never be public 
+        * Instance field should never be public
+            - Limits typing 
+            - Limits invariants 
+            - Are not thread-safe
+        * Array are always mutable
+            - Never have a public static final array field
+            - Or an accessor that returns such a beast
+            - Be careful of IDEs that create accessors automatically
+    In Public Classes, Use Accessor Methods, not Public Fields
+        * Book still insists on using lame examples of sets instead of 
+          simply making fields public
+            - With the ostensible argument that we can change internal representation
+                # but we never do
+                # And if we do, we break the preexisting API contract
+            - Less harmful if immutable
+
+*************************************************************************************
+Class Notes 07/17
+
+1). Stand Up
+    - Since last time?
+        Pair programmed with Luke, Edwin, and David
+        Reading effective java book 
+     - What I Will do next time?
+        Pair program with my team after class
+        Finish up CLI tests with Greg
+        Finish up objects tests with Edwin
+     - Blockers
+       None
+
+       "Universal plug and play" needs to be turned off on your router
+
+2). Classes and Interfaces - Chapter 4 | Effective Java (Continuation)
+
+    Minimize Mutability
+        * All information provided at construction
+        * Any changes result in new objects
+            - Which is a general rule
+        * Don't provide methods that modify an object's state
+            - Mutators
+        * Ensure class cannot be extended 
+            - subclasses can't change intent
+        * Make all fields final
+        * Make all fields private 
+        * Ensure client cannot obtain references to mutable data 
+            - Don't use client-provided reference
+            - Don't return direct object reference
+            - Make defense copies 
+        * Immutable objects are simple
+            - Always the same behavior
+            - Never global data
+        * Immutable objects are thread-safe
+            - Implicitly parallelizable
+            - No synchronization needed 
+        * Only possible downside is the need for an object for each value
+            - But: objects are in general cheap
+            - Are you sure it's inefficient 
+        * "Classes should be immutable unless there is a good reason to make them mutable"
+            - At the very least, from an external point of view
+        * If cannot be immutable, limit mutability as much as possible
+            - Make every field final, if notified otherwise
+    Favor Composition over Inheritance
+        * GO4
+        * Inheritance violates encapsulation
+    Compose intermediate
+        * An instrumentedHashSet has a HashSet instead of extending a HashSet
+            - And extends a ForwardingSet class
+        * Have methods forward to the referenced type
+        *  There are wrapper classes
+            - AKA decorator classes 
+    Inheritance
+        * Is-A relationship
+        * Is every instance of a subclass really an instance of the superclass?
+            - if not, have a private instance...
+    Design and Document for Inheritance
+        * The only way to test a class designed for inheritance is to write subclasses
+        * Constructors must not call over-ridable methods
+            - Directly or indirectly 
+            - A superclass constructor runs before a subclass constructor, so any 
+              subclass...
+    Prefer Interfaces to Abstract Classes
+        * Classes force inheritance
+            - Java is a single inheritance
+        * Existing classes can be easily changed implement interface
+        * Interface are ideal for defining maxins 
+            - Loosely, a mixin is an additional type for a class
+            - Useful for polymorphism
+            - Know what methods are available to client, which in general define a type
+        * Can create skeletal implementation for each interface
+            - Generally call AbstractInterface (Skeleton interface might be better)
+            - AbstractCollection, Map, List, and Set
+        * Abstract do permit multiple implementations
+    Prefer Class Hierarchies to Tagged Classes
+        * Verbose, error-prone, and inefficient
+        * Imitation of a real class hierarchy
+
 *************************************************************************************
