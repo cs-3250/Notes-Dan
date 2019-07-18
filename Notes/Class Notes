@@ -1651,3 +1651,51 @@ Class Notes 07/17
         * Imitation of a real class hierarchy
 
 *************************************************************************************
+Class Notes 07/18
+1). Demo Day
+
+2). Classes and Interfaces - Chapter 4 | Effective Java (Continuation)
+
+    Use Function Objects to REpresent Strategies
+        * Java didn't have method references or lamda
+        * ...
+    Favor static Member Classes Over Non-Static
+        * A nested class is defined within another class
+        * Only serves the encoding class
+        * Four kinds (inner classes):
+            - Static 
+            - Non-Static
+            - Anonymous 
+            - Local
+        * Last three are called inner classes
+        * For example, in a linked list, nodes do not need to refer to 
+          head, tail, etc., from list class
+        * No need for node to contain all the data in list, so it can be 
+          a static member class
+    Anonymous Classes
+        * Have no names
+        * Not a member of enclosing class
+        * Declared and instantiated at the same place
+        * ... 
+        "A Lamda is an anonymous method" - Beaty
+
+3). Generics - Chapter 5 | Effective Java
+    Typing 
+        * Java's type system is very complex
+        * It add various mechanisms to add "generics"
+        * Other languages simply have references to objects and duck typing 
+    Generic Types
+        * Generic classes and interfaces are known as generic types
+        * Generic types define sets of parameterized...
+    Prefer Lists to Arrays
+        * Arrays are convariant
+            - If sub is a subtype of super, sun[] is a subtype pf super[]
+        * Generics are invariant
+            - List<t1> is never a subtype of List<t2>
+        Example:
+        class a {...}
+        class b extends a {...}
+        a y[];
+        b z[];
+        
+*************************************************************************************
