@@ -1652,6 +1652,7 @@ Class Notes 07/17
 
 *************************************************************************************
 Class Notes 07/18
+
 1). Demo Day
 
 2). Classes and Interfaces - Chapter 4 | Effective Java (Continuation)
@@ -1697,5 +1698,78 @@ Class Notes 07/18
         class b extends a {...}
         a y[];
         b z[];
-        
+
+*************************************************************************************
+Class Notes 07/22
+
+1). Stand Up
+    - Since last time?
+        Pair programmed with Luke, Matt, Lauren, and David
+        Reading effective java book
+        Pair programmed with Derek
+        Worked on the Trello with Edwin and Lauren
+     - What I Will do next time?
+        Meeting after class
+        Finish up the Maze and CLI 
+        Finish up load method
+     - Blockers
+       CLI and maze 
+
+2). Generics - Chapter 5 | Effective Java (continuation)
+    Arrays Verses Generics
+        * Arrays are redefined
+            - Their element types are enforced at runtime
+        * Generics are implement by type erasure
+            - Types enforced at compile time and erase type at run time 
+        * Cannot create arrays of generic types, parameterized types, or 
+          type parameters
+    Bounded Wildcards
+        * list<String> is not a subtype of list<Object>
+        * However, every object is a subtype of itself 
+        * So, can have a parameter that "extends"...
+    When To Use
+        * Use bounded wildcards in methods that have producer or consumer parameters
+            - Maybe not a great idea anyway
+        * PECS: Producer/Extends, Consumer/Super
+
+3). Enums and Annotations - Chapter 6 | Effective Java
+    Java 
+        * Java's enumerations are more powerful than other languages'
+        * Almost classes
+            - Can't extend, but can implement an interface
+        * Export one instance of each enumeration via a public static final field
+        * Enums are final
+            - Only one instance
+        * Provide compile-time type safety
+        * Can't pass or assign incorrectly 
+    Enumerations
+        * Don't count on ordinal values
+        * Use constructor instead
+        * Use EnumSets instead of bit fields
+    Annotations
+        * Prefer Annotations to Naming Patterns
+            - JUnit a major example
+        * Consistently use @Override
+            - Makes sure you are actually overriding
+            - Especially for equals, toString, and hashCode
+    Use Marker Interfaces to Define Types 
+        * A marker interface is one with no methods
+        * Serializable is an object
+            - Indicates object can be written via ObjectOutputStream 
+
+4). Upon Reflection
+        "The ability for the computer program modify its own structure" - Beaty
+    Java
+        * JUnit, Sprint, Struts, and Hibernate (object-relational mapping)
+        * Information on:
+            - Classes and inheritance
+            - Methods (and constructors)
+            - Fields
+            - Modifiers
+        * Can call
+            - Methods (and constructors)
+        * Can change fields and modifiers
+        * Can't add/delete classes, fields, or methods 
+    (A Ton of Java in Class Examples)
+
 *************************************************************************************
