@@ -163,9 +163,9 @@ Sprint Goal
 	intends to work together as a self-organizing team to accomplish the Sprint Goal and 
 	create the anticipated Increment by the end of the Sprint.
 	
-o	What did I do yesterday that helped the Development Team meet the Sprint Goal?
-o	What will I do today to help the Development Team meet the Sprint Goal?
-o	Do I see any impediment that prevents me or the Development Team from meeting the Sprint Goal?
+		o What did I do yesterday that helped the Development Team meet the Sprint Goal?
+		o What will I do today to help the Development Team meet the Sprint Goal?
+		o Do I see any impediment that prevents me or the Development Team from meeting the Sprint Goal?
 	The Development Team or team members often meet immediately after the Daily 
 	Scrum for detailed discussions, or to adapt, or re-plan, the rest of the Sprint’s work. 
 
@@ -185,14 +185,14 @@ o	Do I see any impediment that prevents me or the Development Team from meeting 
 	This is an informal meeting, not a status meeting, and the presentation of the Increment 
 	is intended to elicit feedback and foster collaboration.
 
-o	The Product Owner explains what Product Backlog items have been “Done” and what has 
-	not been “Done”
-o	The Development Team discusses what went well during the Sprint, what problems it 
-	ran into, and how those problems were solved;
-o	The entire group collaborates on what to do next, so that the Sprint Review 
-	provides valuable input to subsequent Sprint Planning
-o	Review of the timeline, budget, potential capabilities, and marketplace for the next
- 	anticipated releases of functionality or capability of the product
+		o The Product Owner explains what Product Backlog items have been “Done” and what has 
+		  not been “Done”
+		o The Development Team discusses what went well during the Sprint, what problems it 
+		  ran into, and how those problems were solved;
+		o The entire group collaborates on what to do next, so that the Sprint Review 
+		  provides valuable input to subsequent Sprint Planning
+		o Review of the timeline, budget, potential capabilities, and marketplace for the next
+ 		  anticipated releases of functionality or capability of the product
 
 -	Sprint Retrospective – The Sprint Retrospective is an opportunity for the Scrum Team 
 	to inspect itself and create a plan for improvements to be enacted during the next Sprint.
@@ -202,9 +202,9 @@ o	Review of the timeline, budget, potential capabilities, and marketplace for th
 	peer team member in the meeting from the accountability over the Scrum process.
 
 	 The purpose of the Sprint Retrospective is to:
-o	Inspect how the last Sprint went with regards to people, relationships, process, and tools
-o	Identify and order the major items that went well and potential improvements;
-o	Create a plan for implementing improvements to the way the Scrum Team does its work
+		o Inspect how the last Sprint went with regards to people, relationships, process, and tools
+		o Identify and order the major items that went well and potential improvements;
+		o Create a plan for implementing improvements to the way the Scrum Team does its work
 	
 	By the end of the Sprint Retrospective, the Scrum Team should have identified 
 	improvements that it will implement in the next Sprint. Implementing these 

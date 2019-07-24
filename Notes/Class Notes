@@ -1773,3 +1773,67 @@ Class Notes 07/22
     (A Ton of Java in Class Examples)
 
 *************************************************************************************
+Class Notes 07/24
+
+1). Stand Up
+    - Since last time?
+        Pair programmed with Casey, David, and Edwin
+        Had a meeting with Edwin to fix Trello better
+     - What I Will do next time?
+        Meeting after class
+        Finish up the Maze and CLI 
+     - Blockers
+       CLI and maze 
+
+2). Methods - Chapter 8 | Effective Java
+    Check Parameters for Validity
+        * Most parameters have restrictions on their validity
+            - Positive, non-null, not zero-length, etc.
+        * AKA preconditions
+        * Program defensively 
+        * Catch problems as soon as possible
+        * Fail test (a soon as there is a problem take an appropriate action)
+        * Method may die 
+            - Or worse, work but in an unexpected way
+        * Throw an exception
+            -  An IllegalArgumentException a good choice
+    Assertions
+        * Optional in Java
+            - Must enable with -ea
+            - Or in first class (and doesn't enable them there):
+                static {
+                    ClassLoader.getSystemClassLoader().
+                        setDefaultAssertionsStatus(true); 
+                }
+                ^
+                |"Turns on assertions from then on" - Beaty
+    Check Parameters for Validity
+        * Important for maintaining object consistency
+            - Values stored for later use must be good
+            - Checks in constructors is important
+        * Check before doing any calculation
+            - Unless calculation does the checks for you
+    Makes Defensive Copies
+        * Assume the worst of your class's clients
+            - They will modify your invariants 
+    Arrays 
+        * Non-zero-length arrays are always mutable
+        * Return a copy
+    Design Method Signatures Carefully
+        * Good names
+        * Short parameter lists
+            - If identical, maybe use varargs
+    Short Parameter Lists
+        * Maybe pass a class that encapsulates multiple parameters
+        * Maybe use the builder pattern
+        * Prefer interfaces for parameters
+        * Avoid booleans, favor enumerations 
+    Overloading Judiciously
+        * Overloading happens at compile time
+        * Overloading is static, overriding is dynamic
+        static - happens at compile time
+        dynamic - happens at run time
+    Write good Javadoc Documentation
+        * For all your visible teams
+
+*************************************************************************************
