@@ -1831,9 +1831,89 @@ Class Notes 07/24
     Overloading Judiciously
         * Overloading happens at compile time
         * Overloading is static, overriding is dynamic
-        static - happens at compile time
-        dynamic - happens at run time
+            static - happens at compile time
+            dynamic - happens at run time
     Write good Javadoc Documentation
-        * For all your visible teams
+        * For all your visible teammates
+
+*************************************************************************************
+Class Notes 07/25
+
+1). Stand Up
+    - Since last time?
+        Pair programmed with Lauren, Casey, and Edwin
+        Fixed up the Trello
+        Updated the yaml file and updated the code for our map tests
+     - What I Will do next time?
+        Meeting after class
+        Finish up the Maze and CLI test that is lacking
+     - Blockers
+       Just need help with the save/load method tests
+
+2). Lambdas and Streams - Chapter 7 | Effective Java
+    Prefer lambdas to Anonymous Classes
+        * For example strategy patterns 
+        * Used to use anonymous classes
+        * Java 8 introduced functional interfaces
+            - Lambda expressions
+            - Method references 
+        * Equivalent
+        * More concise 
+    Types
+        * Static
+            Example:
+                Str -> Integer.parseInt(str)
+                Integer::parseDouble
+        * Bound 
+            - Receiving object specified in method reference
+            Example:
+                Instance then = instant.now();
+                t -> then.isAfter(t)
+                Instant.now()::isAfter
+        * Unbound 
+            - Receiving object specified in lambda parameter
+            Example:
+                str -> str.toLowerCase()
+                String::toLowerCase
+        * Contractors for classes and arrays 
+    Favor the Use of Standard Functional interfaces
+        * 43 Total
+        * 5 basic typesOperator
+            - Results and arguments the same type 
+              (Usually always doubles returned)
+        * Predicate 
+            - Returns a boolean
+        * Function
+            - Arguments and return types difference
+        * Supplier 
+            - Takes no arguments but returns a value
+        * Consumer 
+            - Takes arguments but returns nothing
+        * UnaryOperator - T apply (T t)
+            - String::toLowerCase
+        * BinaryOperator - T apply (T ti, T t2)
+        * Predicate - boolean test
+        ...
+        * Function - R apply (T t)
+            - Arrays::asList
+        * Supplier - T get ()
+            - Instant::now
+        * Consumer - void accept (T t)
+            - System.out::println
+    Use Streams Judiciously
+        * Stream - sequence of data elements
+        * Pipeline - multistage computation on elements
+        * Source, intermediate operations, terminal operation
+        * Executed lazily
+        * Fluent - chained into a single statements
+        * Sequential by default
+            - Can add .parallel
+        * Best for transforming, filtering, combining, accumulating, 
+          searching a series of data
+    Use Caution When Making Stream parallel
+        * Doesn't work well with Stream.iterate or .limit
+        * Does work well with ArrayList, HashMap, HashSet, arrays, 
+          int and long ranges
+        * Best if terminal operation is a reduction
 
 *************************************************************************************
