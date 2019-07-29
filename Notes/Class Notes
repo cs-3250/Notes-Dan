@@ -1917,3 +1917,67 @@ Class Notes 07/25
         * Best if terminal operation is a reduction
 
 *************************************************************************************
+Class Notes 07/29
+
+1). Stand Up
+    - Since last time?
+        Worked with Edwin, Derek, David, Lauren, and Luke (it was a party)
+        Edwin and I worked on Trello together to finish writing cards for everyone
+        Worked with Derek on the title screen, help menu, and game story
+        Basically almost finished the demo presentation
+        Communicated with our customer
+     - What I Will do next time?
+        Meeting after class
+        Finish up documentation
+     - Blockers
+       None
+
+2). Exceptions - Chapter 10 | Effective Java
+    Use Exceptions only for Exceptional conditions
+        * A well-designed API must not force its clients to use exceptions for 
+          ordinary control flow
+        "APIs are the public methods" - Beaty
+    Use Checked Exceptions for Recoverable conditions
+        * Three kinds of throwables
+            - Checked exceptions
+            - Runtime exceptions
+            - Errors
+        * Checked exceptions require client to catch or propagate
+    Runtime Exceptions and Errors
+        * Mostly for precondition violations
+        * Use runtime exceptions for programming errors
+            - ArrayIndexOutOfBounds Exception
+        * Errors for JVM issues
+            - E.g.: resource deficiencies 
+        * Don't subclass Errors
+        * Don't throw any except AssertionError
+    Avoid Unnecessary Use of Checked Exceptions
+        * Create state-testing methods
+            - But beware of threading "check and act" race conditions
+    Favor The Use of Standard Exceptions
+        * E.G.: IllegalArgumentException
+    Throw Exceptions Appropriate to the Abstraction
+        * Catch lower-level exceptions and throw more appropriate exception
+    Document All Exceptions Thrown bBy Each Method
+        * Declare all checked exceptions individually 
+        * Document precisely the conditions one is thrown 
+        * Use @throws for checked, but not for unchecked
+    Include Failure-Capture Information in Detail Messages
+        * Include the values of all parameters and fields that contributed 
+          to the exception
+            - Don't include sensitive information as it may up end up in logs, 
+              backups, etc.
+    Strive for Failure Atomicity
+        * Failure method should leave the object in the state it was prior to the invocation
+        * Check before using parameters 
+    Don't Ignore Exceptions
+        * Don't have empty catch blocks! 
+        * If you do, comment it
+
+3). *** I DON'T KNOW WHAT THIS PRESENTATION IS LOL ***
+    Introduction
+    * Very useful for matching patterns in text etc.
+    * Also widely used, sometimes in a limited form, for matching filenames
+        - "Blobbing 
+    WGET - 
+    CURL - Download pages and manipulate web pages 
